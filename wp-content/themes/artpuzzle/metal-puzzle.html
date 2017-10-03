@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Art Puzzle - Mô hình kim loại</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300|Source+Sans+Pro:400,900,300&amp;subset=latin,latin-ext,vietnamese">
+
+        <link href="css/jquery.sidr.light.css" rel="stylesheet">
+        <link href="css/style.css?t=20151023" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- This header is use only for xs devices -->
+        <div id="mobile-header" class="visible-xs">
+                <nav class="navbar navbar-default navbar-art">
+                    
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a id="sidebar" href="#sidr" class="navbar-toggle-art collapsed" >
+                                        <i class="fa fa-bars fa-2x"></i>  
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <a class="navbar-brand visible-xs brand-text" href="#">ArtPuzzle.vn</a>
+                                </div>
+
+                                <div class="col-xs-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidr">
+                        <!-- Your content -->
+                        <ul>
+                            <li class="search-content">
+                                <form class="search-form">
+                                    <div class="form-group has-warning">
+                                        <label>
+                                            <i class="fa fa-search"></i>
+                                        </label>
+                                        <input type="email" class="form-control" placeholder="Nhập từ khóa">
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="text-uppercase nav-header">Thông Tin</li>
+                            <li><a href="/"><i class="fa fa-home icon"></i> Trang Chủ</a></li>
+                            <li><a href="#"><i class="fa fa-globe icon"></i> Liên Hệ</a></li>
+                            <li class="text-uppercase nav-header">Danh Mục</li>
+                            <li><a href="/category.html"><i class="fa fa-university icon"></i> Kiến Trúc Quốc Tế</a></li>
+                            <li><a href="/category.html"><i class="fa fa-rocket icon"></i> Xe Tăng Chiến Đấu</a></li>
+                            <li><a href="/category.html"><i class="fa fa-ship icon"></i> Tàu Thủy</a></li>
+                            <li><a href="/category.html"><i class="fa fa-bug icon"></i> Côn Trùng</a></li>
+                            <li><a href="/category.html"><i class="fa fa-train icon"></i> Xe Lửa</a></li>
+                            <li><a href="/category.html"><i class="fa fa-car icon"></i> Xe Hơi</a></li>
+                            <li><a href="/category.html"><i class="fa fa-fighter-jet icon"></i> Máy Bay Chiến Đấu</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </div>
+        <!-- End navbar for xs devices -->
+
+        <div id="main-container" class="container">
+            <div id="header" class="hidden-xs">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                        <a href="/"><img src="img/logo.png" class="logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                        <div class="text-center social">
+                            <a href="" class="link-social facebook"><i class="fa fa-facebook fa-3x"></i></a> 
+                            <a href="" class="link-social youtube"><i class="fa fa-youtube fa-3x"></i></a>
+                            <a href="" class="link-social twitter"><i class="fa fa-twitter fa-3x"></i></a>
+                            <a href="" class="link-social pinterest"><i class="fa fa-pinterest fa-3x"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                        <div class="right-content">
+                            <p class="text-right phone"><i class="fa fa-phone phone"></i> Hotline: 090 8845 977</p>
+                            <p class="text-right mail"><a href="mailto:artpuzzle@gmail.com"><i class="fa fa-envelope mail"></i> artpuzzle@gmail.com</a></p>
+                            <p class="text-right cart"><i class="fa fa-shopping-cart"></i> <span class="badge badge-art">0</span> sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This navbar is use for sm, md, lg devices -->
+            <div id="navbar" class="hidden-xs">
+                <nav class="navbar navbar-default navbar-art">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand brand-logo" href="#"><img src="img/eiffel_tower.png"></a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">Trang Chủ</a></li>
+                                <li><a href="/">Mô Hình Kim Loại</a></li>
+                                <li><a href="/">Bán Chạy Nhất</a></li>
+                                <li><a href="/">Về Chúng Tôi</a></li>
+                                <li><a href="/">Liên Hệ</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/">So Sánh</a></li>
+                                <li class="search">
+                                    <a href="#" class="" id="btn-search-menu"><i class="fa fa-search"></i></a>
+                                    <div class="search-menu-wrapper">
+                                        <div class="search-menu">
+                                            <form class="form-search form-inline">
+                                                <div class="has-warning form-group">
+                                                    <input type="text" class="form-control art input-sm has-warning" placeholder="Từ khóa"/>
+                                                </div>
+                                                <button type="submit" class="btn btn-art btn-sm">Tìm Kiếm</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="container">
+                <div class="row">
+                    <div id="category" class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+                        <ul class="nav">
+                            <li class="nav-header">Danh Mục</li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-university"></i> Kiến Trúc Quốc Tế</a></li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-rocket"></i> Xe Tăng Chiến Đấu</a></li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-ship"></i> Tàu Thủy</a></li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-bug"></i> Côn Trùng</a></li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-train"></i> Xe Lửa</a></li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-car"></i> Xe Hơi</a></li>
+                            <li class="sub-nav"><a href="/category.html"><i class="fa fa-fighter-jet"></i> Máy Bay Chiến Đấu</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="content" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="row breadcrumb-art">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <ol class="breadcrumb">
+                                    <li><a href="">Trang Chủ</a></li>
+                                    <li class="active">Mô Hình Kim Loại</li>
+                                </ol>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h1 class="heading hidden-xs">
+                                    <i class="fa fa-puzzle-piece"></i> Mô Hình Kim Loại (<span class="total-product">99</span>)
+                                    <div class="order-wrapper pull-right">
+                                        <form class="form-inline">
+                                            <div class="form-group has-warning">
+                                                <label for="order_by">Sắp xếp</label>
+                                                <select class="form-control">
+                                                    <option>Giá tăng dần</option>
+                                                    <option>Giá giảm dần</option>
+                                                    <option>Tên A-Z</option>
+                                                    <option>Tên Z-A</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </h1>
+                                <h3 class="heading visible-xs mobile"><i class="fa fa-bank"></i> Kiến Trúc Thế Giới (<span class="total-product">50</span>)</h3>
+                            </div>
+                        </div>
+                        <div class="row product-group" id="product-group">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/eiffel_tower_product.png" class="hidden-xs"/>
+                                                <img src="img/eiffel_tower_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <span class="addon sold">
+                                                <span>Hết Hàng</span>
+                                            </span>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Tháp Eiffel</a></h4>
+                                            <p class="price">110.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/castle_product.png" class="hidden-xs" />
+                                                <img src="img/castle_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Lâu Đài Cổ Tích</a></h4>
+                                            <p class="price">225.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/himeji_product.png" class="hidden-xs" />
+                                                <img src="img/himeji_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <span class="addon sale">
+                                                <span>Giảm Giá</span>
+                                            </span>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Lâu Đài Himeji</a></h4>
+                                            <p class="price"><del class="old-price"><small>250.000</small></del>225.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/eiffel_tower_product.png" class="hidden-xs"/>
+                                                <img src="img/eiffel_tower_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <span class="addon sold">
+                                                <span>Hết Hàng</span>
+                                            </span>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sub-mobile-content">
+                                            <div class="subinfo">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Tháp Eiffel</a></h4>
+                                            <p class="price hidden-xs">110.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/castle_product.png" class="hidden-xs" />
+                                                <img src="img/castle_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Lâu Đài Cổ Tích</a></h4>
+                                            <p class="price">225.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/himeji_product.png" class="hidden-xs" />
+                                                <img src="img/himeji_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <span class="addon sale">
+                                                <span>Giảm Giá</span>
+                                            </span>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Lâu Đài Himeji</a></h4>
+                                            <p class="price"><del class="old-price"><small>250.000</small></del>225.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/eiffel_tower_product.png" class="hidden-xs"/>
+                                                <img src="img/eiffel_tower_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <span class="addon sold">
+                                                <span>Hết Hàng</span>
+                                            </span>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Tháp Eiffel</a></h4>
+                                            <p class="price hidden-xs">110.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/castle_product.png" class="hidden-xs" />
+                                                <img src="img/castle_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Lâu Đài Cổ Tích</a></h4>
+                                            <p class="price">225.000đ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 product-block">
+                                        <div class="product">
+                                            <a href="/" class="image-block">
+                                                <img src="img/himeji_product.png" class="hidden-xs" />
+                                                <img src="img/himeji_product_small.png" class="visible-xs small-image"/>
+                                            </a>
+                                            <span class="addon sale">
+                                                <span>Giảm Giá</span>
+                                            </span>
+                                            <div class="sub-content">
+                                                <div class="subinfo">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="add-to-cart">
+                                                                    <i class="fa fa-cart-plus" data-toggle="tooltip" title="Mua ngay"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="compare">
+                                                                    <i class="fa fa-retweet" data-toggle="tooltip" title="So sánh"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+                                                            <div class="icon">
+                                                                <a href="#" class="view">
+                                                                    <i class="fa fa-arrow-circle-right" data-toggle="tooltip" title="Xem chi tiết"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="difficulty text-center">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span>Mã: MP019</span>
+                                                </div>
+                                            </div>
+                                            <div class="sub-content-mobile visible-xs">
+                                                <div class="difficulty text-center">
+                                                    <span class="difficult-icon">
+                                                        <i class="fa fa-dashboard"></i>
+                                                    </span>
+                                                    <i class="fa fa-star star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                    <i class="fa fa-star-o star-icon"></i>
+                                                </div>
+                                                <div class="code text-center">
+                                                    <span class="icon-code"><i class="fa fa-puzzle-piece"></i></span>
+                                                    <span class="text">MP019</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-info text-center">
+                                            <h4 class="title"><a href="/">Lâu Đài Himeji</a></h4>
+                                            <p class="price"><del class="old-price"><small>250.000</small></del>225.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-wrapper row">
+                            <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <ul class="pagination pull-right">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="active"><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <div id="footer-top">
+                    <div class="row mobile visible-xs">
+                        <div class="col-xs-12 text-center">
+                            <div class="content">
+                                <address>
+                                    © 2015 <a href="/" class="website"><strong>ArtPuzzle.vn</strong></a>
+                                    <br/>
+                                    348/7 Tân Sơn Nhì, Q. Tân Phú, Tp. HCM
+                                    <br/>
+                                    Hotline: 090 8845 977
+                                    <br/>
+                                    Email: <a class="mailto" href="mailto:artpuzzlevn@gmail.com">artpuzzlevn@gmail.com</a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row website hidden-xs">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                            <h3>Menu</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="">Trang Chủ</a></li>
+                                <li><a href="">Mô Hình Kim Loại</a></li>
+                                <li><a href="">Bán Chạy Nhất</a></li>
+                                <li><a href="">Về ArtPuzzle</a></li>
+                                <li><a href="">Liên Hệ</a></li>
+                                <li><a href="">So Sánh</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                            <h3>Danh Mục</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="">Kiến Trúc Quốc Tế</a></li>
+                                <li><a href="">Xe Tăng Chiến Đấu</a></li>
+                                <li><a href="">Tàu Thủy</a></li>
+                                <li><a href="">Côn Trùng</a></li>
+                                <li><a href="">Xe Lửa</a></li>
+                                <li><a href="">Xe Hơi</a></li>
+                                <li><a href="">Máy Bay Chiến Đấu</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                            <h3>Trợ Giúp</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="">Mô lình kim loại là gì?</a></li>
+                                <li><a href="">Trợ giúp</a></li>
+                                <li><a href="">Hình thức giao hàng</a></li>
+                                <li><a href="">Dụng cụ hỗ trợ</a></li>
+                                <li><a href="">Hướng dẫn lắp ghép</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                            <h3>Tìm Nhiều Nhất</h3>
+                            <div class="row">
+                                <ul class="list-unstyled col-sm-6 col-xs-12">
+                                    <li><a href="">Tháp Eiffel</a></li>
+                                    <li><a href="">Tàu Titanic</a></li>
+                                    <li><a href="">Cối Xây Gió</a></li>
+                                    <li><a href="">Lâu Đài Himeji</a></li>
+                                    <li><a href="">Lâu Đài Cổ Tích</a></li>
+                                    <li><a href="">Burj Khalifa</a></li>
+                                    <li><a href="">Đài Quan Sát</a></li>
+                                    <li><a href="">Nhà Hát Con Sò</a></li>
+                                </ul>
+                                <ul class="list-unstyled col-sm-6 hidden-xs">
+                                    <li><a href="">Tháp Eiffel</a></li>
+                                    <li><a href="">Tàu Titanic</a></li>
+                                    <li><a href="">Cối Xây Gió</a></li>
+                                    <li><a href="">Lâu Đài Himeji</a></li>
+                                    <li><a href="">Lâu Đài Cổ Tích</a></li>
+                                    <li><a href="">Burj Khalifa</a></li>
+                                    <li><a href="">Đài Quan Sát</a></li>
+                                    <li><a href="">Nhà Hát Con Sò</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <h3>Khuyến Mãi Mới Nhất</h3>
+                            <div class="row">
+                                <div class="container-fluid">
+                                    <form class="newsletter">
+                                        <div class="form-group has-warning">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                    <input type="text" class="form-control art" placeholder="Nhập email của bạn" name="email" />
+                                                </div>
+
+                                                <button type="submit" class="btn btn-art col-lg-3 col-md-3 col-sm-3 col-xs-3">Nhận</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row address">
+                                <div class="col-lg-12">
+                                    <address>
+                                        © 2015 <a href="/" class="website"><strong>ArtPuzzle.vn</strong></a>
+                                        <br/>
+                                        348/7 Tân Sơn Nhì, P. Tân Sơn Nhì, Q. Tân Phú, Tp. HCM
+                                        <br/>
+                                        <u title="phone">Hotline:</u> 090 8845 977
+                                        <br/>
+                                        Email: <a class="mailto" href="mailto:artpuzzlevn@gmail.com">artpuzzlevn@gmail.com</a>
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="row social">
+                                <div class="col-lg-12">
+                                    <a href="" class="link-social facebook"><i class="fa fa-facebook-official fa-3x"></i></a> 
+                                    <a href="" class="link-social youtube"><i class="fa fa-youtube-square fa-3x"></i></a>
+                                    <a href="" class="link-social twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
+                                    <a href="" class="link-social pinterest"><i class="fa fa-pinterest-square fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="scroll-top">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/jquery.sidr.min.js"></script>
+
+        <script src="js/app.js?t=20151023"></script>
+    </body>
+</html>
